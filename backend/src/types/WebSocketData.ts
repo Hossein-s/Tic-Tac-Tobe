@@ -3,5 +3,5 @@ import { Player } from "./Player";
 
 export type WebSocketData = {
   game: Game;
-  player: Player;
+  player?: Player;
 };

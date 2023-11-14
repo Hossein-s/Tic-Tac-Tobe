@@ -18,7 +18,7 @@ export class Games {
 
   static getGame(id: string): Game {
     const game = this.games[id];
-    if (game) {
+    if (!game) {
       throw new Error("Invalid game id");
     }
 
